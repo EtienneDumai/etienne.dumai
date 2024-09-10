@@ -1,0 +1,386 @@
+/* Réinitialisation des styles par défaut des navigateurs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: visible;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+section h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+#titre {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+#titre li {
+    list-style: none;
+    display: inline;
+    margin: 0 1rem;
+}
+#titre li a {
+    color: #fff;
+    text-decoration: none;
+}
+#titre li a:hover {
+    cursor : pointer;
+}
+#cache{
+    overflow: hidden;
+}
+/* About Section */
+#about p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Projects Section */
+#projects .project {
+    margin-bottom: 1.5rem;
+}
+
+#projects .project h3 {
+    margin-bottom: 0.5rem;
+}
+
+#projects .project p {
+    margin-bottom: 0.5rem;
+}
+
+#projects .project button {
+    color: #333;
+    text-decoration: none;
+    background: #f4f4f4;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+#projects .project button:hover {
+    background: #ddd;
+}
+
+#projects .container .project .encadrer p {
+    background-color: #444244; /* Couleur de fond bleu */
+    color: white; /* Couleur du texte blanche */
+    padding: 1px 8px; /* Espacement interne */
+    border-radius: 20px; /* Bordures arrondies */
+    font-family: Arial, sans-serif; /* Police du texte */
+    display: inline-block; /* Affichage en ligne */
+    margin-top: 5px; /*Ecartement du haut*/
+    margin-bottom: 5px; /*Ecartement du bas*/
+}
+
+/* Skills Section */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills ul li {
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin-bottom: 0.5rem;
+}
+
+#contact input,
+#contact textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 0.7rem;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background: #555;
+}
+
+/* S201 Section, Page projetS201.html */
+#S201 a {
+    color: inherit;
+    text-decoration: none;
+}
+#S201 nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#S201 nav ul li {
+    margin: 0 1rem;
+}
+
+#S201 nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#S201 nav ul li a:hover {
+    text-decoration: underline;
+}
+#S201 .container h2 {
+    text-align: left;
+    margin: 0 auto;
+}
+
+#S201 .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#S201 .image img {
+    margin: 35px;
+    max-width: 100%;
+    /* Pour s'assurer que l'image ne dépasse pas le conteneur */
+    height: auto;
+}
+
+#S201 .container p {
+    text-align: left;
+    margin: 0 auto;
+}
+
+#S201 .container .gras {
+    font-weight: bold;
+}
+
+#S201 .container .container .imageCoteACote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#S201 .container .container .imageCoteACote img {
+    margin: 10px;
+    max-width: 48%;
+}
+/* S202 Section, Page projetS202.html */
+#S202 a {
+    color: inherit;
+    text-decoration: none;
+}
+#S202 nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#S202 nav ul li {
+    margin: 0 1rem;
+}
+
+#S202 nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#S202 nav ul li a:hover {
+    text-decoration: underline;
+}
+#S202 .container h2 {
+    text-align: left;
+    margin: 0 auto;
+}
+#S202 .container .souligner  {
+    text-align: left;
+    margin: 0 auto;
+    text-decoration: underline;
+}
+#S202 .container .gras {
+    font-weight: bold;
+}
+#S202 .container .container .imageCoteACote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+#S202 .container .container .imageCoteACote img {
+    margin: 10px;
+    max-width: 49%;
+}
+#S202 .image img {
+    margin: 35px;
+    max-width: 100%;
+    /* Pour s'assurer que l'image ne dépasse pas le conteneur */
+    height: auto;
+}
+
+/* S203 Section, Page projetS203.html */
+#S203 .container h2 {
+    text-align: left;
+    margin: 0 auto;
+}
+#S203 .container .souligner  {
+    text-align: left;
+    margin: 0 auto;
+    text-decoration: underline;
+}
+#S203 .container .gras {
+    font-weight: bold;
+}
+#S203 .container .container .imageCoteACote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+#S203 .container .container .imageCoteACote img {
+    margin: 10px;
+    max-width: 49%;
+}
+#S203 .image img {
+    margin: 35px;
+    max-width: 100%;
+    /* Pour s'assurer que l'image ne dépasse pas le conteneur */
+    height: auto;
+}
+#S203 .container .image {
+    display : flex;
+    align-items: center;
+}
+#S203 .container .image img {
+    margin: auto;
+    margin-top : 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    /* Pour s'assurer que l'image ne dépasse pas le conteneur */
+    height: auto;
+}
+#S203 a {
+    color: inherit;
+    text-decoration: none;
+}
+#S203 nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#S203 nav ul li {
+    margin: 0 1rem;
+}
+
+#S203 nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#S203 nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animation JS
+/* Ajoutez ces styles à la fin de styles.css */
+
+/* Initial state for scroll elements */
+
+.container,
+.image,
+.imageCoteACote,
+footer {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Visible state for scroll elements */
+.container.visible,
+.image.visible,
+.imageCoteACote.visible,
+footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+} 

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="titre">
+                <li><a onclick="location.href = 'index.html';">Portfolio</a></li>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>Bonjour, je suis Dumai Etienne, un développeur passioné actuellement en BUT Informatique à l'IUT de
+                Bayonne.</p>
+    </section>
+
+    <section id="projects">
+
+        <div class="container">
+
+            <h2>Mes Projets :</h2>
+
+            <div class="project">
+                <h3>Lecteur de Diaporama</h3>
+                <h4>Langages et logiciels utilisés :</h4>
+                <div class="encadrer">
+                    <p>C++</p>
+                    <p>Qt Creator</p>
+                    <p>SQL</p>
+                    <p>PhpMyAdmin</p>
+                </div>
+                <button onclick="location.href = 'projets/projetS201.html';" type="lienProjet">Lien vers le projet</button>
+            </div>
+
+            <div class="project">
+                <h3>Algorithmes de recherche de plus courts chemins</h3>
+                <h4>Langages et logiciels utilisés :</h4>
+                <div class="encadrer">
+                    <p>Python</p>
+                    <p>Spyder</p>
+                </div>
+                <button onclick="location.href = 'projets/projetS202.html';" type="lienProjet">Lien vers le projet</button>
+            </div>
+
+            <div class="project">
+                <h3>Installation de services réseaux</h3>
+                <h4>Langages et logiciels utilisés :</h4>
+                <div class="encadrer">
+                    <p>Marionnet</p>
+                    <p>Bash</p>
+                </div>
+                <button onclick="location.href = 'projets/projetS203.html';" type="lienProjet">Lien vers le projet</button>
+            </div>
+            <div class = "project">
+                <h3>Exploitation d'une base de donnée</h3>
+                <h4>Langages et logiciels utilisés :</h4>
+                <div class="encadrer">
+                    <p>Python</p>
+                    <p>SQL</p>
+                    <p>PhpMyAdmin</p>
+                </div>
+                <button onclick="location.href = 'projets/projetS204.html';" type="lienProjet">Lien vers le projet</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Compétences</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Bash</li>
+                <li>Outils de développement (Git, GitHub, Qt Creator, VSCode, Spyder, PhpMyAdmin, MySql Workbench)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contactez-moi</h2>
+            <form action="#" method="post">
+                <label for="email">Email : etienne.dumai@gmail.com</label>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DUMAI Etienne. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
+<script src="js/script.js"></script>
