@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="titre">
+                <li><a onclick="location.href = '../index.html';">Portfolio</a></li>
+            </div>
+        </div>
+    </header>
+    <section id="S201">
+        <div class="container">
+            <h1>Lecteur de Diaporama</h1>
+            <h2>Description :</h2>
+            <p>Le but de ce projet était de créer pas à pas un lecteur de diaporama qui fonctionne avec des images (gif)
+                stockés sur la machine
+                et avec l'applications reliée à une base de données locale pour avoir les informations des diaporamas.
+                Le projet était par groupe de 3,
+                il était à faire sur Qt Creator* en C++, puis implémenter une base de données* SQL* contenant les
+                informations
+                des diaporamas.
+                Nous partons d'une version console donnée par nos enseignants et nous devons ajouter des fonctionnalités
+                au fur
+                et à mesures des versions qui ajoutent à chaque fois une ou plusieurs nouvelles fonctionnalités.
+                Lien du projet : <a href="https://github.com/FranzouGame/SAE1.01-LecteurDiaporama.git">Lecteur de
+                    Diaporama</a>
+            </p>
+            <br>
+            <br>
+            <div class="gras">
+                <p>
+                    Le projet a été réalisé en 6 étapes (versions) :
+                </p>
+                <ul>
+                    <li><a href="#Ver1">Version 1</a></li>
+                    <li><a href="#Ver2">Version 2</a></li>
+                    <li><a href="#Ver3">Version 3</a></li>
+                    <li><a href="#Ver4">Version 4</a></li>
+                    <li><a href="#Ver5">Version 5</a></li>
+                    <li><a href="#Ver6">Version 6</a></li>
+                    <li><a href="#VerB">Version Bonus</a></li>
+                    <li><a href="#Lexique">Lexique</a></li>
+                    <li><a href="#Conclusion">Conclusion</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <ul>
+                    <section id="Ver1">
+                        <h2>Version 1</h2>
+                        <div class="container">
+                            <li>Mise en classes de la v0 fournie, création de diagramme de classes
+                                en UML*, documentation des classes créer à partir de la v0.
+                                Aucune interface graphique n'était demandé juste une éxécution en console.
+                            </li>
+                        </div>
+                        <div class="imageCoteACote">
+                            <img src="../images/S201/imagesS201v1Console.png">
+                            <img src="../images/S201/DiagrammeDesClassesV1.png">
+                        </div>
+                    </section>
+                    <section id="Ver2">
+                        <h2>Version 2</h2>
+                        <div class="container">
+                            <li>Création de l'interface de l'application, avec tout les boutons fonctionnels
+                                (Notifications de leurs fonctions avec des qDebug()*)
+                                , création d'un diagramme d'état transition.
+                            </li>
+                        </div>
+                        <div class="imageCoteACote">
+                            <img src="../images/S201/imagesS201V2.png">
+                            <img src="../images/S201/DiagrammeEtatsTransitionsV2.png">
+                        </div>
+                        </li>
+                        <li>Version 2_MVP : Mise en place d'un modèle MVP* (Modèle Vue Présentation) de l'interface
+                            graphique.
+                        </li>
+                    </section>
+                    <section id="Ver3">
+                        <h2>Version 3_MVP</h2>
+                        <div class="container">
+                            <li>Ajout du fonctionnement du lecteur en mode manuel, mise en fonctionnement
+                                du buton Fichier >> Quitter pour quitter l'application, le bouton Aide >> A propos de
+                                permet
+                                d'ouvrir une nouvelle fenetre contenant des informations sur la version de
+                                l'application, la
+                                date de création, les auteurs.
+                            </li>
+                        </div>
+                        <div class="imageCoteACote">
+                            <img src="../images/S201/imagesS201V3.png">
+                            <img src="../images/S201/AProposDeV3.png">
+                        </div>
+                    </section>
+                    <section id="Ver4">
+                        <h2>Version 4_MVP</h2>
+                        <div class="container">
+                            <li>Ajout de la fonctionnalité de lecture des images en mode
+                                automatique (Chaque image est passé automatiquement jusqu'à la fin du diaporama).
+                            </li>
+                        </div>
+                        <div class="image">
+                            <img src="../images/S201/imagesS201V4.png">
+                        </div>
+                    </section>
+                    <section id="Ver5">
+                        <h2>Version 5_MVP</h2>
+                        <div class="container">
+                            <li> Ajout de la fonctionnalité pour changer la vitesse de défilement
+                                du diaporama via une boite de dialogue Fichier >> Paramètres >> Vitesse de
+                                défilement. Implémentation du chargement d'un diaporama selon la maniere dont
+                                ils sont construit au démarrage de l'application avec les images stockées en
+                                dur sur la machine et leurs informations aussi Fichier >> Paramètre >> Charger.
+                                Ajout de la focntionnalité d'enelever un diaporama (vider le lecteur)
+                                Fichier >> Paramètres >> Enlever diaporama.
+                            </li>
+                        </div>
+                        <div class="imageCoteACote">
+                            <img src="../images/S201/ChoixVitesseS201V5.png">
+                            <img src="../images/S201/ChargerDiaporamaS201V5.png">
+                        </div>
+                    </section>
+                    <section id="Ver6">
+                        <h2>Version 6_MVP </h2>
+                        <div class="container">
+                            <li>Cette version contient les versions de la V6 à la V8 car tout ce qui est
+                                fait est
+                                relatif à l'implémentation de la base de données, pour avoir les informations sur les
+                                diaporamas,
+                                cette version contient l'implémentation de la base de données dans le code,
+                                l'implémentation
+                                de la
+                                base de données lors du chargement du diaporama (interroger la base de données pour
+                                avoir
+                                les infos
+                                d'un diaporama séléctionné). Enfin la V8 demandé quand la vitesse de défilement était
+                                changer dans
+                                l'application qu'elle soit aussi modifiée dans le base de données, et de changer le
+                                chemin
+                                d'accès
+                                aux images pour avoir sur le nom de chaque personnage disney de l'image en tant que nom.
+                                Nous avons un bureau virtuel qui permet d'accéder a une base de données hébérgée par
+                                notre
+                                IUT mais
+                                il a des horaires d'ouverture alors nous avons décidé d'installer une base de données
+                                locale
+                                sur nos
+                                machines personnelles pour ne pas être restreint dans notre travail.
+                            </li>
+                        </div>
+                        <div class="imageCoteACote">
+                            <img src="../images/S201/bdS201V6.png">
+                            <img src="../images/S201/infosDiaporamaV6.png">
+                        </div>
+                    </section>
+                    <section id="VerB">
+                        <h2>Version Bonus_MVP</h2>
+                        <div class="container">
+                            <li>Nous avons fini la V6 (V8) avec 3 semaines d'avance donc nous avons
+                                décidés d'inclure
+                                des foncctionnalités bonus telles que : Des animations lors du changement d'image, une
+                                fenetre permettant
+                                de créer un diaporama qui l'inclus dans la base de données avec toutes les informations
+                                nécessaires. Nous
+                                avons trouvés un moyen d'inclure du CSS* permettant de modifier l'apparence de boutons
+                                et autres éléments de l'appliaction comme sur un site web, un membre du groupe veux
+                                faire
+                                plus tard développeur
+                                web donc on lui a totalement laissé cette tache avec carte blanche un seul mot d'ordre :
+                                qu'il nous surprenne.
+                                Nous avons aussi ajouté des icones de fenetre pour ne plus avoir les icones par défaut
+                                de
+                                Qt.
+                            </li>
+                        </div>
+                        <div class="imageCoteACote">
+                            <img src="../images/S201/AppliPrincipaleS201V7.png">
+                            <img src="../images/S201/CreationDiapoS201V7.png">
+                        </div>
+                    </section>
+            </div>
+            <div class="container">
+                <section id="Lexique">
+                    <h2>Lexique</h2>
+                    <div class=container>
+                        <ul>
+                            <li>
+                                Qt Creator : Environnement de développement intégré (IDE) pour le développement
+                                d'applications
+                                logicielles avec l'interface graphique en C++.
+                            </li>
+                            <br>
+                            <li>
+                                UML : Langage de modélisation graphique à base de pictogrammes conçu pour fournir une
+                                méthode
+                                normalisée pour visualiser la conception d'un système.
+                            </li>
+                            <br>
+                            <li>
+                                qDebug() : Fonction de Qt qui permet d'afficher des messages dans la console de débogage
+                                de
+                                Qt
+                                Creator.
+                            </li>
+                            <br>
+                            <li>
+                                Modèle MVP : Modèle de conception qui sépare les données de l'interface graphique et de
+                                la
+                                logique
+                                de l'application.
+                            </li>
+                            <br>
+                            <li>
+                                Base de données : Système de gestion de données permettant de stocker et de manipuler
+                                des
+                                données
+                                structurées.
+                            </li>
+                            <br>
+                            <li>
+                                SQL : Langage de programmation permettant de manipuler des bases de données
+                                relationnelles.
+                            </li>
+                            <br>
+                            <li>
+                                CSS : Langage de style permettant de définir l'apparence des éléments d'une page web.
+                            </li>
+                            <br>
+                        </ul>
+                    </div>
+                </section>
+                <section id="Conclusion">
+                    <h2>Conclusion</h2>
+                    <p>
+                        Ce projet était très intéressant car il nous a permis de découvrir un nouvel environnement de
+                        développement
+                        (Qt Creator) et de travailler en groupe sur un projet concret. Nous avons pu mettre en pratique
+                        nos
+                        connaissances en programmation orientée objet, en interface graphique et en base de données.
+                        Nous avons également appris à
+                        travailler
+                        en équipe et à gérer un projet de A à Z, pour pouvoir le rendre à temps. Ce projet nous a permis
+                        d'approfondir
+                        nos compétences en
+                        programmation
+                        et en conception logicielle dans un projet de plus concret qu'un jeu en console comme nous avons
+                        pu faire
+                        au premier semestre, et nous a donné un aperçu du travail en entreprise.
+                    </p>
+                </section>
+            </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 DUMAI Etienne. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
+<script src="../js/script.js"></script>
